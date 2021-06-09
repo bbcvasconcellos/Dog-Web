@@ -1,0 +1,49 @@
+body {
+    font-family: helvetica;
+}
+
+#header {
+    background-color: #d24cdf;
+    height: 50px;
+    text-align: center;
+    line-height: 40px; 
+}
+
+h1 {
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+}
+
+.row {
+    margin: 10px 20px;
+}
+
+#results {
+    margin: 30px 20px 10px 0px;
+}
+
+.user-row {
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: #d498da;
+    width: 100%;
+    float: left;
+}
+
+.user-row img {
+    float: left;
+    margin-right: 20px;
+    height: 80px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.user-info {
+    float: left;
+    margin-left: 10px;
+}
+
+.user-row > button{ 
+    float: right;
+}

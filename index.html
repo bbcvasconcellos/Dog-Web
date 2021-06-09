@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DogApp</title>
+        <link href="reset.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header"><h1>Dog Date</h1></div>
+        <div id="main">
+            <div class="row">
+                <div class="row">
+                    <label>Gender</label>
+                    <select id="gender">
+                        <option value="A">All</option>
+                        <option value="F">Female</option>
+                        <option value="M">Male</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label>Hobbies</label>
+                    <input type="text" id="hobby" />
+                </div>
+                <div class="row">
+                    <label>Breed</label>
+                    <input type="text" id="breed" />
+                </div>
+                <div class="row">
+                    <button id="searchBtn">Search</button>
+                </div>
+            </div>
+            <div id="results"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
