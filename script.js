@@ -1,11 +1,4 @@
-/*
-useful objects
-1) console -> we use the proeperty .log from this object
-2) window -> access to high level content in the page such as redirect the user or open a new tab 
-3) document -> DOM representation for all the html in the page
-*/
-
-//the user would be imported from a database in a real world project; in this program it will be hardcoded -> it will use JSON in both cases
+//the user would be imported from a database in a real world project; in this program it will be hardcoded
 
 let users = [
     {
@@ -88,7 +81,7 @@ let users = [
 ];
 
 
-//load event -> important to now if the page is responsive and functional
+//load event -> important to know if the page is responsive and functional
 window.addEventListener('load', function(){
     let results = document.getElementById('results');
 
@@ -109,7 +102,7 @@ window.addEventListener('load', function(){
         let gender = genderField.options[selectedGender].value;
 
         let resultsHTML = "";
-        let usersLen = users.length; //this will be more code efficient -> quicker for each interation
+        let usersLen = users.length;
         for(let i = 0; i < usersLen; i++){
             //check gender
             if(gender === "A" || gender == users[i].gender){
@@ -134,14 +127,3 @@ window.addEventListener('load', function(){
     let searchBtn = document.getElementById('searchBtn');
     searchBtn.addEventListener('click', search);
 });
-
-//obs: addEventListener(eventType, response) -> in the above code when the page load the message will be displayed in the console
-
-//click event
-/*
-document.getElementById -> access an element from the DOM by its predefined id. If the element does not exist, the code will return null
-*/
-
-/*
-How to modify DOM elements: .innerHTML
-*/
